@@ -7,7 +7,7 @@ import os
 from os.path import join, dirname
 from dotenv import load_dotenv
 
-dotenv_path = join(dirname(_file_), '.env')
+dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
 MONGODB_URI = os.environ.get("mongodb+srv://chintya:sparta@cluster0.vywmvbi.mongodb.net/?retryWrites=true&w=majority")
